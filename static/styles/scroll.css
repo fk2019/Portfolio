@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.nav {
+    display: flex;
+    color: #8;
+    padding-right: 3em;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #b56777;
+}
+.intro {
+    margin-bottom: auto;
+}
+.nav > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1em;
+    gap: 5em;
+}
+.slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    gap: 2.5em;
+
+}
+.slide1 {
+    justify-content: center;
+    flex-direction: column;
+/*    background: linear-gradient(454deg, #6f4080, #9553ff);*/
+}
+.slide2 {
+/*    background: linear-gradient(454deg, #404c80, #53ff88);*/
+}
+.projects, .head, .intro {
+    display: flex;
+    margin-left: 2em;
+    margin-right: 2em;
+    gap: 2em;
+}
+.head, .intro {
+    flex-direction: column;
+    gap: 0;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+.head > h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.np {
+    border: 1px solid white;
+    padding-top: 0;
+    margin-bottom: 0.5em;
+}
+.project > p {
+
+    font-size: 1.5em;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+.project > a {
+    text-align: center;
+    margin-top: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.3em;
+}
+.project >a:hover {
+    background: #333;
+    color: #fff;
+}

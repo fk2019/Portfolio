@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="../static/styles/scroll.css">
+</head>
+<body>
+  <div class="container">
+    <section class="slide headline slide1">
+      <div class="head">
+	<h1>Crafting Digital Solutions: Elevating Experiences, One Line of Code at a Time</h1>
+	<h2>Innovative digital solutions meticulously crafted to elevate user experience. Experience firsthand hoe my expertise in software engineering can transform your ideas into impactful realities, setting new standards in the digital landscape.</h2>
+      </div>
+    </section>
+    <section class="slide slide2">
+      <div class="projects">
+	<div class="project">
+          <h3>Chatsphere App</h3>
+          <p>A messaging app built using React Native.</p>
+          <a href="#">View Project</a>
+	</div>
+	<div class="project">
+          <h3>AirBnB Clone Project</h3>
+          <p>A web application replicating AirBnB functionalities using Django.</p>
+          <a href="#">View Project</a>
+	</div>
+	<div class="project">
+          <h3>Shell Projects</h3>
+          <p>Various shell scripting projects automating system tasks.</p>
+          <a href="#">View Project</a>
+	</div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
