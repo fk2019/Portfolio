@@ -32,6 +32,12 @@ a:hover {
     font-size: 1em;
     gap: 5em;
 }
+.fa-moon {
+    justify-content: flex-end;
+    align-self: center;
+    margin-left: 80%;
+    font-size: 2em;
+}
 .slide {
     width: 100%;
     height: 100vh;
@@ -99,4 +105,41 @@ h3 {
 .project >a:hover {
     background: #333;
     color: #fff;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+     width: 90%;
+
+}
+.links {
+    display: flex;
+    margin-bottom: 3em;
+}
+.brands {
+    margin-left: auto;
+    display: flex;
+    gap: 3em;
+}
+.copy {
+    align-self: center;
+}
+.top {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+i {
+    font-size: 3em;
+
+}
+.fa-arrow-up {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.go-top {
+    margin-top: 0;
+    font-size: 1em;
+    margin-right: auto;
 }
