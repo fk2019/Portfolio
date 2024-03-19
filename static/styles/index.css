@@ -11,15 +11,28 @@ body {
 }
 .nav {
     display: flex;
-    padding-right: 3em;
     margin-bottom: auto;
     margin-right: auto;
+    width: 100%;
+    flex-wrap:wrap;
 }
-
+.fa-moon, .fa-sun {
+    align-self: center;
+    padding-right: .5em;
+}
+.logo {
+    width: 100%;
+    margin-left: 1em;
+}
 a {
     text-decoration: none;
     color: #333;
 }
+.nav > ul {
+    flex: 1;
+    padding: 1em;
+}
+
 a:hover {
     /*color: #b0bec5;*/
     color: #018786;
@@ -36,7 +49,7 @@ a:hover {
     font-size: 1em;
     gap: 5em;
 }
-.icon {
+.icons {
     justify-content: flex-end;
     align-self: center;
     margin-left: 80%;
@@ -57,8 +70,7 @@ a:hover {
 
 }
 .slide1 {
-    justify-content: center;
-    flex-direction: column;
+
 /*    background: linear-gradient(454deg, #6f4080, #9553ff);*/
 }
 .slide2 {
@@ -82,10 +94,7 @@ h1 {
     font-size: 3em;
     margin-bottom: 0;
 }
-.head > h1 {
-    font-size: 5em;
-    margin-bottom: 0;
-}
+
 h3 {
     font-size: 2.5em;
     margin-bottom: 0;
@@ -118,7 +127,7 @@ h3 {
 .darker {
     background: rgba(19, 19, 19, 0.3);
 }
-.project > a, .all {
+.project > a, .all, .contact-me {
     text-align: center;
     margin-top: 0;
     border-radius: 3px;
@@ -137,6 +146,14 @@ h3 {
     width: 90%;
 
 }
+.contact-me {
+    width: 10%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .links {
     display: flex;
     margin-bottom: 3em;
@@ -171,4 +188,65 @@ i {
     margin-top: 0;
     font-size: 1em;
     margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+    .slide {
+	gap: 1em;
+	flex-direction: column;
+    }
+    .slide1 {
+	flex-direction: row;
+	gap: 1em;
+    }
+
+    .logo {
+
+    }
+    ul {
+	gap: 1em;
+    }
+    .fa-moon, .fa-sun {
+	width: .2em;
+	font-size: .8em;
+	padding-right: 2em;
+    }
+    h1 {
+	font-size: 1em;
+    }
+    h2 {
+	font-size: 0.7em;
+    }
+    h3 {
+	font-size: 0.6em;
+    }
+    .project > p {
+	font-size: 0.7em;
+    }
+    .projects {
+	flex-wrap: no-wrap;
+	gap: 1em;
+    }
+    a {
+	font-size: 0.5em;
+    }
+    .contact-me {
+	margin-top: 2em;
+	align-self: center;
+	width: 30%;
+    }
+    .brands {
+	gap: 0;
+    }
+    .brands > ul {
+	gap: 1em;
+	flex-direction: column;
+    }
+    .brands > ul> li:last-child {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+    }
+    .pipe {
+	display: none;
+    }
 }
